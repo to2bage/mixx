@@ -86,8 +86,8 @@ int main(int argc, char *argv[])
 {
     int arr[] = {3,5,1,2,-3,7,14,8};
     int size = sizeof(arr)/sizeof(int);
-    int r = MissingNumber(arr, size);
-    //int r = FirstMissNumber(arr, size);
+    //int r = MissingNumber(arr, size);
+    int r = FirstMissNumber(arr, size);
     printf("%4d\n", r);
 
     return 0;
