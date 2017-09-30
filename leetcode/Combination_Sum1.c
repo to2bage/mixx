@@ -83,8 +83,8 @@ int** combinationSum(int* candidates, int candidatesSize, int target,
     }
     cnt = 0;
     
-    //*columnSizes = (int *)malloc(100 * sizeof(int));
-    //memset(columnSizes, 0, 100 * sizeof(int));
+    *columnSizes = (int *)malloc(100 * sizeof(int));
+    memset(*columnSizes, 0, 100 * sizeof(int));
     
     int *data = (int *)malloc(candidatesSize * sizeof(int));
     memset(data, 0, candidatesSize * sizeof(int));
@@ -97,14 +97,15 @@ int** combinationSum(int* candidates, int candidatesSize, int target,
 
 int main(int argc, char *argv[])
 {
-    int candidates[] = {2,3,6,7};
+    //int candidates[] = {2,3,6,7};
     //int candidates[] = {5,10,25,1};
+    int candidates[] = {8,10,6,3,4,12,11,5,9};
     int candidatesSize = sizeof(candidates) / sizeof(int);
-    int target = 7;
+    int target = 28;
     int returnSize = 0;
-    //int *columnSizes = NULL;
-    int *columnSizes = (int *)malloc(100 * sizeof(int));
-    memset(columnSizes, 0, 100 * sizeof(int));
+    int *columnSizes = NULL;
+    //int *columnSizes = (int *)malloc(100 * sizeof(int));
+    //memset(columnSizes, 0, 100 * sizeof(int));
 
     int **pprect = combinationSum(candidates, candidatesSize, target, &columnSizes, &returnSize);
     for(int i = 0; i < returnSize; i++)
