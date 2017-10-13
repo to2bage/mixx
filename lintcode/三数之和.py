@@ -49,6 +49,6 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    numbers = [-1, 0, 1, 2, -1, -4]
+    numbers = [-1, 0, 1, 2, -1, -4]         # [-4, -1, -1, 0, 1, 2]
     r = s.threeSum(numbers)
     print(r)
