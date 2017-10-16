@@ -11,7 +11,7 @@ class Solution(object):
         if not nums or len(nums) < 4:
             return []
         self.rect = []
-        self.kSum(nums, target, 4, [])
+        self.kSum(sorted(nums), target, 4, [])
         return self.rect
     def kSum(self, nums, target, k, tmp):
         if k == 2:
@@ -24,7 +24,14 @@ class Solution(object):
                     left += 1
                 elif value == target:
                     tmp.extend([nums[left], nums[right]])
-                    self.rect.append(tmp[:])
+                    if tmp not in self.rect:
+                        self.rect.append(tmp[:])
+                    tmp.pop()
+                    tmp.pop()
+                    left += 1
+                    right -= 1
+                    #return
+            #tmp = []
             return
         else:
             left = 0
@@ -32,11 +39,14 @@ class Solution(object):
                 tmp.extend([nums[left]])
                 self.kSum(nums[left+1:], target - nums[left], k - 1, tmp)
                 tmp.pop()
+                #print(tmp)              #test
                 left += 1
 
 if __name__ == "__main__":
     s = Solution()
-    nums = [1, 0, -1, 0, -2, 2]
+    #nums = [1, 0, -1, 0, -2, 2]         # [-2, -1, 0, 0, 1, 2]
+    #target = 0
+    nums = [-3, -2, -1, 0, 0, 1, 2, 3]
     target = 0
     r = s.fourSum(nums, target)
     print(r)
