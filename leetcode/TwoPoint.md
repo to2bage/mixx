@@ -13,15 +13,15 @@
 > 10. Valid Palindrome
 
 > ## List ##
-> 11. Partition list
-> 10. Rotate List
+> 86. Partition list
+> 61. Rotate List
 > 11. Palindrome Linked List
 > 1. Remove Nth Node From End of List
 
 > ## Tail ##
-> 1. Remove Element
-> 2. Remove Duplicates from Sorted Array
-> 3. Remove Duplicates from Sorted Array II
+> 27. Remove Element
+> 26. Remove Duplicates from Sorted Array
+> 80. Remove Duplicates from Sorted Array II
 > 4. Partition Array
 > 5. Sort Colors
 > 6. Move Zeroes
