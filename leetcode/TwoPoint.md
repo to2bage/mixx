@@ -23,14 +23,15 @@
 > 26. Remove Duplicates from Sorted Array
 > 80. Remove Duplicates from Sorted Array II
 > 4. Partition Array
-> 5. Sort Colors
-> 6. Move Zeroes
-> 7. Partition Array by Odd and Even
+> 75. Sort Colors
+> 283. Move Zeroes
+> 7. Partition Array by Odd and Even(** lintcode **)
 > 8. Sort Letters by Case
 
 
 > ## 窗口类 ##
 > 2. Minimum Size Subarray Sum
+> 2. Subarray Sum II
 > 3. Longest Substring Without Repeating Characters
 > 4. Longest Substring With At Most Two Distinct Characters
 > 5. Minimum Window Substring
